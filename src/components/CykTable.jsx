@@ -4,7 +4,7 @@ function CykTable({ table, words }) {
   const n = words.length;
 
   return (
-    <div className="overflow-x-auto max-w-6xl mx-auto px-6 pb-24">
+    <div className="overflow-x-auto max-w-6xl mx-auto px-6">
       <table className="border-collapse mx-auto">
         <tbody>
           {[...Array(n)].map((_, row) => {

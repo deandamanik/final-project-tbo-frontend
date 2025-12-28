@@ -9,11 +9,6 @@ function InputForm({ sentence, setSentence, onParse, loading }) {
         autoComplete="off"
         className="w-full max-w-2xl px-5 py-4 rounded-xl border border-slate-300 text-lg outline-none focus:border-slate-500"
       />
-
-        <p className="text-sm text-slate-400">
-            Contoh: saya sedang belajar di kampus
-          </p>
-
       <button
         onClick={onParse}
         disabled={loading}
@@ -26,3 +21,4 @@ function InputForm({ sentence, setSentence, onParse, loading }) {
 }
 
 export default InputForm;
+ 

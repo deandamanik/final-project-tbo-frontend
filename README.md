@@ -1,16 +1,32 @@
-# React + Vite
+# Frontend CYK Parser - Tugas Akhir TBO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi frontend ini dikembangkan menggunakan **React** untuk menyediakan antarmuka visual bagi parser kalimat Bahasa Indonesia. Proyek ini merupakan bagian dari tugas akhir mata kuliah Teori Bahasa dan Automata (TBO) yang mengimplementasikan **Algoritma CYK (Cocke-Younger-Kasami)**.
 
-Currently, two official plugins are available:
+## Fitur Utama
+- **Interactive Input**: Memungkinkan pengguna memasukkan kalimat bahasa Indonesia untuk divalidasi secara real-time.
+- **Visualisasi Tabel CYK**: Menampilkan proses pengisian matriks segitiga (triangular table) yang dinamis, memudahkan pemahaman cara kerja algoritma dalam menentukan validitas sintaksis.
+- **Analisis Pola S-P-O-K**: Sistem secara cerdas mendeteksi dan menampilkan pola kalimat seperti Subjek (S), Predikat (P), Objek (O), dan Keterangan (K) berdasarkan hasil parsing.
+- **Status Validasi**: Memberikan indikator visual yang jelas apakah sebuah kalimat "DITERIMA" atau "DITOLAK" oleh aturan tata bahasa yang telah ditetapkan.
+- **Modern & Responsive UI**: Dibangun dengan Tailwind CSS untuk memastikan tampilan yang bersih, modern, dan nyaman diakses melalui perangkat desktop maupun mobile.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Teknologi yang Digunakan
+- **React.js**
+- **Tailwind CSS**
+- **Fetch API**
 
-## React Compiler
+## Cara Menjalankan
+1. **Clone Repositori**:
+   ```bash
+   git clone https://github.com/deandamanik/final-project-tbo-frontend.git
+   cd final-project-tbo-frontend
+   ```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Jalankan Aplikasi**
+   ```bash
+   npm run dev
+   ```
